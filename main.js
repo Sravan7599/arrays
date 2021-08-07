@@ -63,3 +63,55 @@ var animals=["dog","Cat","tiger","lion","crocodile","monkewy","zebra","elephant"
 for (var i=0;i<=animals.length-1;i++){
     console.log(animals[i])
 }
+
+
+
+
+
+// Objects
+var student= {
+    name : 'sravan',
+    age : 22,
+    mobile : 8919113963,
+    address: {
+        village:'krpalli',
+        city:'nellore',
+        state:'ap'
+    }
+}
+
+console.log(student.age);
+console.log(student.address);
+console.log(student.address.state);
+console.log(student.address['state']);
+
+student.graduate='true';
+console.log(student);
+console.log(student.address);
+
+var student1=student;
+console.log(student1);
+student1.gender='male';
+console.log(student1);
+
+
+// function within the object is called method
+var video= {
+    name: 'Tutorial',
+    play : function() {
+        console.log('video played');
+    },
+}
+console.log(video.name);
+console.log(video.play());
+
+
+var video= {
+    name: 'Tutorial',
+    play : function() {
+        console.log('video played');
+    },
+    time: [0,50,100]
+}
+
+console.log(video.time);
